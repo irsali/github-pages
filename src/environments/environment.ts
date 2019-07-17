@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:57774/api/',
-  odataUrl: 'http://localhost:57774/odata/',
+  apiUrl: 'https://api.github.com/',
+  odataUrl: 'https://api.github.com/',
+  token: ''
 };
 
 /*

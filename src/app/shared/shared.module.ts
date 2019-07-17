@@ -9,8 +9,10 @@ import {
   MatProgressBarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatDialogModule, MatSnackBarModule,
   MatSelectModule, MatInputModule, MatSidenavModule, MatCardModule, MatIconModule, MatRadioModule, MatProgressSpinnerModule,
   MatTabsModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatAutocompleteModule,
-  MatDatepickerModule, MatNativeDateModule, MatTooltipModule, MatStepperModule
+  MatDatepickerModule, MatNativeDateModule, MatTooltipModule, MatStepperModule,
+
 } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // import { QuillModule } from 'ngx-quill';
 // import { MediumEditorModule } from 'angular2-medium-editor';
@@ -42,6 +44,7 @@ import { IrsIndexComponent } from './controls/template/index-template/index-temp
 @NgModule({
   imports: [
     CommonModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
@@ -56,6 +59,7 @@ import { IrsIndexComponent } from './controls/template/index-template/index-temp
   ],
   exports: [
     CommonModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,

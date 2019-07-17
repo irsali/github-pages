@@ -21,7 +21,6 @@ export class TableSettings {
 }
 
 export class SearchTableSettings extends TableSettings {
-  searchQuery?: string;
   searchWord?: string;
 
   constructor(init?: Partial<SearchTableSettings>) {
