@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { INavigationItem } from '@shell-services';
+// import { INavigationItem } from '@shell-services';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,11 +8,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class IrsIndexComponent {
 
-  @Input() links: INavigationItem[];
+  // @Input() links: INavigationItem[];
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
-  goTo(path) {
+  goTo(path: any) {
     this.router.navigate([path], { relativeTo: this.route });
   }
 

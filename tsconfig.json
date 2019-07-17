@@ -5,7 +5,16 @@
     "paths": {
       "@app/shared": [
         "app/shared/index"
-      ]
+      ],
+      "@app/screens/*": [
+        "app/screens/*"
+      ],
+      "@env/environment": [
+        "environments/environment"
+      ],
+      "@odata/*": [
+        "app/odata/*"
+      ],
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

@@ -52,7 +52,7 @@ import { IrsIndexComponent } from './controls/template/index-template/index-temp
     MatTabsModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatAutocompleteModule, MatDatepickerModule,
     MatNativeDateModule, MatTooltipModule, MatStepperModule,
 
-    QuillModule, MediumEditorModule,
+    // QuillModule, MediumEditorModule,
   ],
   exports: [
     CommonModule,
@@ -66,7 +66,7 @@ import { IrsIndexComponent } from './controls/template/index-template/index-temp
     MatTabsModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatAutocompleteModule, MatDatepickerModule,
     MatNativeDateModule, MatTooltipModule, MatStepperModule,
 
-    QuillModule, MediumEditorModule,
+    // QuillModule, MediumEditorModule,
 
     IrsInputComponent, IrsSelectComponent, IrsTableComponent, IrsToggleComponent, IrsCheckboxComponent, IrsTypeaheadComponent,
     IrsDateComponent, IrsRadioComponent,
