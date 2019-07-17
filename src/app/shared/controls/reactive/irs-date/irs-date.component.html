@@ -1,0 +1,20 @@
+<mat-form-field [formGroup]="form" [hideRequiredMarker]="!isRequired" [floatLabel]="floatLabel" class="width100per">
+  <mat-icon *ngIf="icon" matPrefix class="irs-input-icon">{{icon}}</mat-icon>
+
+  <input matInput [placeholder]="label" [matDatepicker]="myDatepicker" [formControlName]="name" [disabled]="isDisabled ? '': null">
+  <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+  <mat-datepicker #myDatepicker [disabled]="isDisabled"></mat-datepicker>
+
+  <mat-error *ngIf="control.hasError('required')">
+    <strong>Required</strong>
+  </mat-error>
+  <mat-error *ngIf="control.hasError('minlength')">
+    Minimum length is {{control.errors['minlength'].requiredLength}}
+  </mat-error>
+  <mat-error *ngIf="control.hasError('maxlength')">
+    Maximum length is {{control.errors['maxlength'].requiredLength}}
+  </mat-error>
+  <mat-error *ngIf="control.hasError('matchOther')">
+    Not Matching
+  </mat-error>
+</mat-form-field>

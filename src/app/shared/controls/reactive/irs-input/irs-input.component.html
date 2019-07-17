@@ -1,0 +1,21 @@
+<mat-form-field [formGroup]="form" [hideRequiredMarker]="!isRequired">
+  <mat-icon *ngIf="icon" matPrefix class="irs-input-icon">{{icon}}</mat-icon>
+  <input [type]="type" matInput [placeholder]="label" [formControlName]="name" [attr.disabled]="control.disabled ? 'true': 'false'">
+
+  <mat-error *ngIf="control.hasError('email')">
+    Please enter a valid email address
+  </mat-error>
+  <mat-error *ngIf="control.hasError('required')">
+    Please enter a <strong>value</strong>
+  </mat-error>
+  <mat-error *ngIf="control.hasError('minlength')">
+    Minimum length is {{control.errors['minlength'].requiredLength}}
+  </mat-error>
+  <mat-error *ngIf="control.hasError('maxlength')">
+    Maximum length is {{control.errors['maxlength'].requiredLength}}
+  </mat-error>
+  <mat-error *ngIf="control.hasError('matchOther')">
+    Not Matching
+  </mat-error>
+</mat-form-field>
+
