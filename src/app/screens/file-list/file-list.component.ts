@@ -65,7 +65,6 @@ export class FileListComponent implements OnInit {
       .pipe(
         startWith({}),
         switchMap(() => {
-          debugger;
           this.isLoadingResults = true;
           // return this.service.getPage(this.paginator.pageIndex + 1, this.paginator.pageSize, 'firstName', this.sort.direction);
           // this.sort.active, this.sort.direction, this.paginator.pageIndex);
